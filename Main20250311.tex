@@ -19,8 +19,8 @@
 \renewcommand{\baselinestretch}{1.5} % 1.5 倍行距排版
 %%图标标题字体设置
 \DeclareCaptionFormat{myformat}{\textbf{#1 #2#3}} % #1 是标签，#2 是标题
-\captionsetup[figure]{\wuhao format=myformat} % 应用到figure环境
-\captionsetup[table]{\wuhao format=myformat} 
+\captionsetup[figure]{format=myformat} % 应用到figure环境
+\captionsetup[table]{format=myformat} 
 \renewcommand{\baselinestretch}{1.5} % 1.5 倍行距排版
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -67,8 +67,8 @@ citecolor=black,}
 \fancyhf{}
 \renewcommand{\headrulewidth}{0.8pt}  % 设置横线宽度 
 %%% =====   奇数页为论文题目, 偶数页为华南师范大学硕士学位论文
-\fancyhead[CO]{\titleinheader}  % 此处不包含中文封面的副标题, 这里可手工增加中文标题
-\fancyhead[CE]{华南师范大学硕士学位论文}  % 可选  华南师范大学博士士学位论文
+\fancyhead[CO]{\wuhao \titleinheader}  % 此处不包含中文封面的副标题, 这里可手工增加中文标题
+\fancyhead[CE]{\wuhao 华南师范大学硕士学位论文}  % 可选  华南师范大学博士士学位论文
 \cfoot{\thepage}
 \fancypagestyle{plain}{
 	\pagestyle{fancy}
